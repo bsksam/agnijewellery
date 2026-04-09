@@ -1,0 +1,202 @@
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+
+/**
+ * Agni Jewellery - Multi-Language Regional Hub
+ * Supporting English, Hindi, Kannada, Tamil, and Malayalam.
+ */
+i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    fallbackLng: 'en',
+    debug: false,
+    interpolation: {
+      escapeValue: false,
+    },
+    resources: {
+      en: {
+        translation: {
+          dashboard: "Dashboard",
+          inventory: "Inventory/Tags",
+          billing: "Billing",
+          history: "Sales History",
+          customers: "Customers",
+          settings: "Settings",
+          rates: "Metal Rates",
+          audit: "Stock Audit",
+          forensic: "Forensic Audit",
+          backup: "Enterprise Backup",
+          intelligence: "Strategic Intelligence",
+          performance: "Team Performance",
+          quotation: "Quotation Desk",
+          gst: "GST Compliance",
+          marketing: "Marketing & Loyalty",
+          repairs: "Repairs & Service",
+          migration: "Migration & Backup",
+          dealers: "Dealer Registry",
+          schemes: "Savings Schemes",
+          orders: "Specialized Orders",
+          vision: "Agni Vision AI",
+          accounting: "Accounts Hub",
+          branches: "Branch & Warehouse",
+          logout: "Logout",
+          welcome: "Welcome back",
+          total_sales: "Total Sales",
+          daily_rates: "Today's Gold Rate",
+          manage: "Manage",
+          search: "Search...",
+          save: "Save Changes",
+          print: "Print Invoice",
+          add_new: "Add New"
+        }
+      },
+      hi: {
+        translation: {
+          dashboard: "डैशबोर्ड",
+          inventory: "इन्वेंटरी/टैग",
+          billing: "बिलिंग",
+          history: "बिक्री इतिहास",
+          customers: "ग्राहक",
+          settings: "सेटिंग्स",
+          rates: "धातु दरें",
+          audit: "स्टॉक ऑडिट",
+          forensic: "फोरेंसिक ऑडिट",
+          backup: "एंटरप्राइज बैकअप",
+          intelligence: "रणनीतिक इंटेलिजेंस",
+          performance: "टीम प्रदर्शन",
+          quotation: "कोटेशन डेस्क",
+          gst: "जीएसटी अनुपालन",
+          marketing: "मार्केटिंग और लॉयल्टी",
+          repairs: "मरम्मत और सेवा",
+          migration: "माइग्रेशन और बैकअप",
+          dealers: "डीलर रजिस्ट्री",
+          schemes: "बचत योजनाएं",
+          orders: "विशेष आदेश",
+          vision: "अग्नि विजन एआई",
+          accounting: "अकाउंट्स हब",
+          branches: "शाखा और गोदाम",
+          logout: "लॉगआउट",
+          welcome: "स्वागत है",
+          total_sales: "कुल बिक्री",
+          daily_rates: "आज की सोने की दर",
+          manage: "प्रबंधन",
+          search: "खोजें...",
+          save: "परिवर्तन सहेजें",
+          print: "बिल प्रिंट करें",
+          add_new: "नया जोड़ें"
+        }
+      },
+      kn: {
+        translation: {
+          dashboard: "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+          inventory: "ದಾಸ್ತಾನು/ಟ್ಯಾಗ್",
+          billing: "ಬಿಲ್ಲಿಂಗ್",
+          history: "ಮಾರಾಟದ ಇತಿಹಾಸ",
+          customers: "ಗ್ರಾಹಕರು",
+          settings: "ಸಂಯೋಜನೆಗಳು",
+          rates: "ಚಿನ್ನದ ದರಗಳು",
+          audit: "ದಾಸ್ತಾನು ಲೆಕ್ಕಪರಿಶೋಧನೆ",
+          forensic: "ವಿಧಿವಿಜ್ಞಾನ ಲೆಕ್ಕಪರಿಶೋಧನೆ",
+          backup: "ಎಂಟರ್‌ಪ್ರೈಸ್ ಬ್ಯಾಕಪ್",
+          intelligence: "ಕಾರ್ಯತಂತ್ರದ ಬುದ್ಧಿವಂತಿಕೆ",
+          performance: "ತಂಡದ ಪ್ರದರ್ಶನ",
+          quotation: "ಉಲ್ಲೇಖ ಡೆಸ್ಕ್",
+          gst: "ಜಿಎಸ್ಟಿ ಅನುಸರಣೆ",
+          marketing: "ಮಾರ್ಕೆಟಿಂಗ್ ಮತ್ತು ಲಾಯಲ್ಟಿ",
+          repairs: "ದುರಸ್ತಿ ಮತ್ತು ಸೇವೆ",
+          migration: "ವಲಸೆ ಮತ್ತು ಬ್ಯಾಕಪ್",
+          dealers: "ಡೀಲರ್ ನೋಂದಾವಣೆ",
+          schemes: "ಉಳಿತಾಯ ಯೋಜನೆಗಳು",
+          orders: "ವಿಶೇಷ ಆದೇಶಗಳು",
+          vision: "ಅಗ್ನಿ ವಿಷನ್ ಎಐ",
+          accounting: "ಖಾತೆಗಳ ಹಬ್",
+          branches: "ಶಾಖೆ ಮತ್ತು ಗೋದಾಮು",
+          logout: "ನಿರ್ಗಮಿಸಿ",
+          welcome: "ಸ್ವಾಗತ",
+          total_sales: "ಒಟ್ಟು ಮಾರಾಟ",
+          daily_rates: "ಇಂದಿನ ಚಿನ್ನದ ದರ",
+          manage: "ನಿರ್ವಹಿಸಿ",
+          search: "ಹುಡುಕಿ...",
+          save: "ಉಳಿಸಿ",
+          print: "ಬಿಲ್ ಪ್ರಿಂಟ್ ಮಾಡಿ",
+          add_new: "ಹೊಸದನ್ನು ಸೇರಿಸಿ"
+        }
+      },
+      ta: {
+        translation: {
+          dashboard: "டாஷ்போர்டு",
+          inventory: "சரக்கு/குறிச்சொல்",
+          billing: "பில்லிங்",
+          history: "விற்பனை வரலாறு",
+          customers: "வாடிக்கையாளர்கள்",
+          settings: "அமைப்புகள்",
+          rates: "தங்க விகிதங்கள்",
+          audit: "சரக்கு தணிக்கை",
+          forensic: "தடயவியல் தணிக்கை",
+          backup: "நிறுவன காப்புப்பிரதி",
+          intelligence: "மூலோபாய நுண்ணறிவு",
+          performance: "குழு செயல்திறன்",
+          quotation: "விலைப்புள்ளி மேசை",
+          gst: "ஜிஎஸ்டி இணக்கம்",
+          marketing: "சந்தைப்படுத்தல் மற்றும் விசுவாசம்",
+          repairs: "பழுதுபார்ப்பு மற்றும் சேவை",
+          migration: "இடமாற்றம் மற்றும் காப்புப்பிரதி",
+          dealers: "வியாபாரி பதிவேடு",
+          schemes: "சேமிப்பு திட்டங்கள்",
+          orders: "சிறப்பு ஆர்டர்கள்",
+          vision: "அக்னி விஷன் ஏஐ",
+          accounting: "கணக்கு மையம்",
+          branches: "கிளை மற்றும் கிடங்கு",
+          logout: "வெளியேறு",
+          welcome: "வரவேற்கிறோம்",
+          total_sales: "மொத்த விற்பனை",
+          daily_rates: "இன்றைய தங்க விகிதம்",
+          manage: "நிர்வகி",
+          search: "தேடு...",
+          save: "சேமி",
+          print: "பில் அச்சிடு",
+          add_new: "புதிதாக சேர்"
+        }
+      },
+      ml: {
+        translation: {
+          dashboard: "ഡാഷ്‌ബോർഡ്",
+          inventory: "ഇൻവെന്ററി/ടാഗ്",
+          billing: "ബില്ലിംഗ്",
+          history: "വിൽപന ചരിത്രം",
+          customers: "ഉപഭോക്താക്കൾ",
+          settings: "ക്രമീകരണങ്ങൾ",
+          rates: "സ്വർണ്ണ നിരക്ക്",
+          audit: "സ്റ്റോക്ക് ഓഡിറ്റ്",
+          forensic: "ഫോറൻസിക് ഓഡിറ്റ്",
+          backup: "ബാക്കപ്പ്",
+          intelligence: "ഇന്റലിജൻസ്",
+          performance: "പ്രകടനം",
+          quotation: "ക്വട്ടേഷൻ",
+          gst: "ജിഎസ്ടി",
+          marketing: "മാർക്കറ്റിംഗ്",
+          repairs: "സർവീസ്",
+          migration: "മൈഗ്രേഷൻ",
+          dealers: "ഡീലർമാർ",
+          schemes: "പദ്ധതികൾ",
+          orders: "ഓർഡറുകൾ",
+          vision: "അഗ്നി വിഷൻ",
+          accounting: "അക്കൗണ്ടിംഗ്",
+          branches: "ബ്രാഞ്ച്",
+          logout: "പുറത്തുകടക്കുക",
+          welcome: "സ്വാഗതം",
+          total_sales: "ആകെ വിൽപന",
+          daily_rates: "ഇന്നത്തെ സ്വർണ്ണ നിരക്ക്",
+          manage: "നിയന്ത്രിക്കുക",
+          search: "തിരയുക...",
+          save: "സേവ് ചെയ്യുക",
+          print: "ബില്ല് പ്രിന്റ് ചെയ്യുക",
+          add_new: "പുതിയത് ചേർക്കുക"
+        }
+      }
+    }
+  });
+
+export default i18n;

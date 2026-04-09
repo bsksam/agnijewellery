@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+.npm/
+.eslintcache
+
+# Build
+dist/
+build/
+.vercel
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Database
+*.db
+*.sqlite
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
