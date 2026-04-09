@@ -71,7 +71,8 @@ export default defineConfig({
     include: ['scheduler', 'react-dom/client']
   },
   build: {
-    outDir: 'dist',
+    outDir: '../public',
+    emptyOutDir: true,
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
       output: {
