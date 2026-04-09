@@ -1,18 +1,1 @@
-{
-    "name": "agnijewellery-erp",
-    "version": "1.0.1",
-    "private": true,
-    "scripts": {
-          "build": "cd client && npm install && npm run build && cd .. && npm run hoist",
-          "hoist": "node -e \"const fs=require('fs'); fs.cpSync('client/dist', 'dist', {recursive:true});\""
-          "deploy": "vercel --prod"
-    },
-    "dependencies": {
-          "@libsql/client": "^0.17.2",
-          "bcryptjs": "^3.0.3",
-          "cors": "^2.8.6",
-          "dotenv": "^17.4.1",
-          "express": "^5.2.1",
-          "jsonwebtoken": "^9.0.3"
-    }
-}
+1.0.,
